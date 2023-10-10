@@ -1,16 +1,18 @@
 #include <stdio.h>
+int sum(int a,int b);
 int main(){
-    // int n,result ;
-    // // for (size_t i = 0; i < count; i++)
-    // // {
-    // //     /* code */
-    // // }
-    // for (size_t i = 0;i<10;i++){
-    //     printf("1");
-    //     for (size_t i = 0;i <10;i++){
-    //         printf("2");
-    //     }
-    //     printf("\n");
-    printf("%d",100*100);
+    // int x = printf("\n");
+    int first = 10;
+    int second = 20;
+    sum(first,second);
+    int result =   sum(first,second);
+    printf("%d",result);
+
+
+    return 0;
+
     }
-// }
+
+int sum(int a ,int b){
+    return a+b;
+}
