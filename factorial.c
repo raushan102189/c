@@ -1,13 +1,13 @@
 
 #include <stdio.h>
-int factorialloop(int n);
-int factorialrecurction(int n);
+// int factorialloop(int n);
+double factorialrecursion(int n);
 int main(){
     int n;
     double result ;
-    printf("enter numer between (1 -15) only you know the reason ok: ");
+    printf("enter a numer: ");
     scanf("%d",&n);
-    result = factorialrecurction(n);
+    result = factorialrecursion(n);
     printf("factorial of %d is %lf",n,result);
 
 }
@@ -24,11 +24,11 @@ int main(){
     
 // }
 //factoriall using recurction
-int factorialrecurction(int n){
+double factorialrecursion(int n){
     if (n==0){
         return 1;
 
     }else{
-        return n*factorialrecurction(n-1);
+        return n*factorialrecursion(n-1);
     }
 }
